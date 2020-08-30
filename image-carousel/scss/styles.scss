@@ -1,0 +1,52 @@
+$bg-color: #2b303a;
+$main-color: #d64933;
+
+body {
+  background: $bg-color;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  color: $main-color;
+  border-bottom: 2px solid $main-color;
+}
+
+.slider {
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+
+  &__images {
+    position: relative;
+    left: 0;
+    transition: left 0.5s;
+    font-size: 0;
+  }
+
+  &__navigation {
+    height: 20px;
+    width: 50%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.slider-nav {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: lighten(grey, 30);
+  box-shadow: 2px 3px 2px grey inset;
+
+  &:hover {
+    background: $main-color;
+  }
+
+  &--active {
+    box-shadow: 2px 2px grey;
+    background: $main-color;
+  }
+}
