@@ -1,0 +1,127 @@
+body {
+  width: 100vw;
+  background: #eee;
+}
+
+.title {
+  text-align: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(2, 150px);
+  gap: 50px;
+  justify-content: center;
+}
+
+.menu,
+.icon-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon-menu {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.icon-menu__bar {
+  background: #333;
+  width: 40px;
+  height: 5px;
+  border-radius: 2.5px;
+  position: relative;
+  transition: all 0.2s;
+}
+.icon-menu__bar::before,
+.icon-menu__bar::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 5px;
+  border-radius: 2.5px;
+  background: #333;
+  top: -0.7em;
+  transition: all 0.2s;
+}
+.icon-menu__bar::after {
+  top: 0.7em;
+}
+.icon-menu__bar--simple {
+  height: 0;
+}
+.icon-menu__bar--simple::before,
+.icon-menu__bar--simple::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.icon-menu__bar--simple::after {
+  transform: rotate(45deg);
+}
+.icon-menu__bar--left-arrow::before,
+.icon-menu__bar--left-arrow::after {
+  transform: rotate(-35deg);
+  width: 30px;
+  top: -0.5em;
+  left: -0.1em;
+}
+.icon-menu__bar--left-arrow::after {
+  transform: rotate(35deg);
+  top: 0.5em;
+}
+.icon-menu__bar--right-arrow::before,
+.icon-menu__bar--right-arrow::after {
+  transform: rotate(35deg);
+  width: 30px;
+  top: -0.5em;
+  right: -0.1em;
+}
+.icon-menu__bar--right-arrow::after {
+  transform: rotate(-35deg);
+  top: 0.5em;
+}
+.icon-menu__bar--compress::before,
+.icon-menu__bar--compress::after {
+  top: 0;
+}
+.icon-menu__bar--rotate90 {
+  transform: rotate(90deg);
+}
+.icon-menu__bar--plus {
+  transform: rotate(90deg);
+}
+.icon-menu__bar--plus::before,
+.icon-menu__bar--plus::after {
+  transform: rotate(-90deg);
+  top: 0;
+}
+.icon-menu__bar--plus::after {
+  height: 0;
+}
+
+.menu-one {
+  background: lightseagreen;
+}
+
+.menu-two {
+  background: lightcoral;
+}
+
+.menu-three {
+  background: lightblue;
+}
+
+.menu-four {
+  background: lightsteelblue;
+}
+
+.menu-five {
+  background: lightgreen;
+}
+
+.menu-six {
+  background: lightsalmon;
+}
