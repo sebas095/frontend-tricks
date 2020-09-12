@@ -1,0 +1,22 @@
+.title {
+  margin: 0;
+  padding: 0.5rem 0;
+  text-align: center;
+  color: #fff;
+  background: #333;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  background: #fff;
+  margin: 20px auto;
+  outline: none;
+
+  &:hover {
+    color: #fff;
+    background: #000;
+  }
+}

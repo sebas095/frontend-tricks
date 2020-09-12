@@ -1,0 +1,66 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(#000, 0.5);
+  transform: scale(0);
+  transition: transform 0.3s;
+
+  &__content {
+    position: relative;
+    background-color: #fff;
+    width: 50vw;
+    height: 60vh;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  &__close {
+    background: #ddd;
+    color: #000;
+    position: absolute;
+    outline: none;
+    top: -0.8rem;
+    right: -0.8rem;
+    border-radius: 50%;
+    border: solid 2px;
+    cursor: pointer;
+
+    &:hover {
+      background: #000;
+      color: #ddd;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__button {
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    background: #ddd;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: #ddd;
+      background: #000;
+    }
+  }
+
+  &--show {
+    transform: scale(1);
+  }
+}
