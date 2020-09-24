@@ -1,0 +1,21 @@
+.slide {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  .slide__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 50%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .slide__img--animate {
+      animation: slide 5s forwards; }
+@keyframes slide {
+  0%,
+        85% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+  100% {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); } }
