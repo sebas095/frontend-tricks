@@ -79,8 +79,8 @@ const getTotalDays = (month) => {
 
 const isLeap = () => {
   return (
-    (currentYear % 100 !== 0 && currentYear % 4 !== 0) ||
-    currentYear % 400 !== 0
+    (currentYear % 100 !== 0 && currentYear % 4 === 0) ||
+    currentYear % 400 === 0
   );
 };
 
